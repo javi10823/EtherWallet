@@ -54,12 +54,10 @@ Have in count, this app cannot be submitted to the apple store, because it havin
 ## Screenshots and video
 
 <img src="https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_0.png" alt="Screenshot" width="300">
-
-![Screenshot](https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_0.png)
-![Screenshot](https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_1.png)
-![Screenshot](https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_2.png)
-![Screenshot](https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_3.png)
-![Screenshot](https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_4.png)
+<img src="https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_1.png" alt="Screenshot" width="300">
+<img src="https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_2.png" alt="Screenshot" width="300">
+<img src="https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_3.png" alt="Screenshot" width="300">
+<img src="https://raw.githubusercontent.com/javi10823/etherwallet/main/README_FILES/screen_4.png" alt="Screenshot" width="300">
 
 Video:
 https://drive.google.com/file/d/1n3yJRyJ1Ecgjn25mTfiNe0eB7P2NI_P8/view?usp=share_link
