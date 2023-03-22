@@ -19,20 +19,18 @@ You can import any ethereum wallet using the seed and you will see the balance a
 ## How to Deploy?
 
 - For Google Play
-
-Create a signed and optimized APK file to publish to the store. This file must pass quality tests and comply with Google Play policies.
-Create a new app listing in the Google Play console and fill in the necessary details such as app name, description, graphics, and pricing.
-Upload the APK file to the Google Play console and add additional information such as screenshots, videos, and app details.
+  Create a signed and optimized APK file to publish to the store. This file must pass quality tests and comply with Google Play policies.
+  Create a new app listing in the Google Play console and fill in the necessary details such as app name, description, graphics, and pricing.
+  Upload the APK file to the Google Play console and add additional information such as screenshots, videos, and app details.
 
 - For Apple Store
-
-Create a developer account on the Apple Developer Portal.
-Create a signed and optimized IPA file to publish to the store. This file must pass quality tests and comply with Apple policies.
-Create a new app registration on the Apple Developer Portal and fill in the necessary details, such as the app name, description, graphics, and pricing.
-Upload the IPA file to the Apple Developer Portal and add additional information such as screenshots, videos, and application details.
-Configure the privacy policy of the application.
-Launch the app on the Apple App Store.
-In my personal experience, the App Store publishing process can be a bit more demanding due to Apple's stricter policies. In addition, it may take a little longer for the app to be approved by Apple than in the Google Play Store. It is also important to note that each store has its own policies and quality requirements that must be met to ensure that the app is published successfully.
+  Create a developer account on the Apple Developer Portal.
+  Create a signed and optimized IPA file to publish to the store. This file must pass quality tests and comply with Apple policies.
+  Create a new app registration on the Apple Developer Portal and fill in the necessary details, such as the app name, description, graphics, and pricing.
+  Upload the IPA file to the Apple Developer Portal and add additional information such as screenshots, videos, and application details.
+  Configure the privacy policy of the application.
+  Launch the app on the Apple App Store.
+  In my personal experience, the App Store publishing process can be a bit more demanding due to Apple's stricter policies. In addition, it may take a little longer for the app to be approved by Apple than in the Google Play Store. It is also important to note that each store has its own policies and quality requirements that must be met to ensure that the app is published successfully.
 
 Have in count, this app cannot be submitted to the apple store, because it having a "upcoming" feature, so wee need to remove the button to sent to the store until we have only completed features.
 
