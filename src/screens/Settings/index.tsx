@@ -1,11 +1,11 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useContext, useState} from 'react';
-import {SafeAreaView} from 'react-native';
-import {Button, Text} from 'react-native-paper';
+import {Button} from 'react-native-paper';
 import {ROUTES} from '../../providers/navigation';
 import {WalletContext} from '../../providers/wallet';
 import {ButtonStyle, Container} from './styles';
 import * as Keychain from 'react-native-keychain';
+import {Header} from '../../components/Header';
 
 export const SettingsScreen = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -28,9 +28,9 @@ export const SettingsScreen = () => {
   };
 
   return (
-    <SafeAreaView>
+    <>
+      <Header hasSettings={false} hasBack />
       <Container>
-        <Text variant="headlineLarge">Settings</Text>
         <Button
           mode="contained"
           style={ButtonStyle}
@@ -39,6 +39,6 @@ export const SettingsScreen = () => {
           Remove wallet
         </Button>
       </Container>
-    </SafeAreaView>
+    </>
   );
 };

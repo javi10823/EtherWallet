@@ -24,31 +24,25 @@ export const AddWalletScreen = () => {
   const {setWallet} = useContext(WalletContext);
 
   const getPrivateKey = () => {
-    console.log('Add');
     importMnemonic(seed, 'password', "m/44'/60'/0'/0/0", true, true, false)
       .then(wallet => {
-        console.log('Wallet loaded', wallet);
-
         setWallet(wallet);
         if (wallet.privateKey) {
-          console.log('Wallet private key');
           return Keychain.setGenericPassword(KEYCHAIN_PRIVATE_KEY, seed, {
             storage: Keychain.STORAGE_TYPE.FB,
             authenticationPrompt: {
               title: 'Save your wallet',
             },
+            authenticationType:
+              Keychain.AUTHENTICATION_TYPE.DEVICE_PASSCODE_OR_BIOMETRICS,
             service: '',
           });
         }
       })
       .then(() => {
-        console.log('Wallet saved');
-
         navigation.navigate(ROUTES.HOME);
       })
       .finally(() => {
-        console.log('Finally');
-
         setIsLoading(false);
       });
   };

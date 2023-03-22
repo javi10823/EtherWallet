@@ -3,16 +3,28 @@ import React from 'react';
 import {Appbar} from 'react-native-paper';
 import {ROUTES} from '../../providers/navigation';
 
-export const Header = () => {
+type HeaderProps = {
+  hasBack?: boolean;
+  hasSettings?: boolean;
+};
+
+export const Header = ({hasBack, hasSettings = true}: HeaderProps) => {
   const navigation = useNavigation();
+
+  const onBack = () => {
+    navigation.goBack();
+  };
 
   return (
     <Appbar.Header>
+      {hasBack && <Appbar.BackAction onPress={onBack} />}
       <Appbar.Content title="EtherWallet" />
-      <Appbar.Action
-        icon="cog"
-        onPress={() => navigation.navigate(ROUTES.SETTINGS)}
-      />
+      {hasSettings && (
+        <Appbar.Action
+          icon="cog"
+          onPress={() => navigation.navigate(ROUTES.SETTINGS)}
+        />
+      )}
     </Appbar.Header>
   );
 };

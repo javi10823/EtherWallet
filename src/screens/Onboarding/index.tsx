@@ -33,12 +33,6 @@ export const OnboardingScreen = () => {
         Keychain.AUTHENTICATION_TYPE.DEVICE_PASSCODE_OR_BIOMETRICS,
     })
       .then(keychainWallet => {
-        console.log({
-          keychainWallet,
-          validation: keychainWallet
-            ? keychainWallet.username === KEYCHAIN_PRIVATE_KEY
-            : 'false',
-        });
         if (
           keychainWallet &&
           keychainWallet.username === KEYCHAIN_PRIVATE_KEY
@@ -54,7 +48,6 @@ export const OnboardingScreen = () => {
         }
       })
       .then(newWallet => {
-        console.log('newWallet', newWallet);
         if (newWallet) {
           setWallet(newWallet as IWallet);
         }

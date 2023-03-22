@@ -4,8 +4,8 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   height: 100%;
   align-items: center;
-  justify-content: center;
-  padding-horizontal: 16px;
+  padding-horizontal: 32px;
+  padding-top: 32px;
 `;
 
 export const DescriptionStyle: StyleProp<TextStyle> = {

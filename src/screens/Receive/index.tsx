@@ -9,7 +9,7 @@ export const Receive = () => {
 
   return (
     <>
-      <Header />
+      <Header hasBack />
       <Container>
         <Card>
           <Card.Content>

@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState, useCallback} from 'react';
 import {Card, Text} from 'react-native-paper';
 import {WalletContext} from '../../providers/wallet';
 import {bigNumberFormatUnits, getBalance} from 'react-native-web3-wallet';
-import {ActionButton, ActionContainer, AddressStyle, Container} from './styles';
+import {ActionButton, ActionContainer, Container} from './styles';
 import {RPC_ADDRESS} from '@env';
 import {Header} from '../../components/Header';
 import {ROUTES} from '../../providers/navigation';
@@ -41,10 +41,8 @@ export const Home = () => {
       <Container>
         <Card>
           <Card.Content>
+            <Text variant="headlineMedium">Balance</Text>
             <Text variant="headlineLarge">{balance} ETH</Text>
-            <Text variant="labelLarge" style={AddressStyle}>
-              {wallet?.address}
-            </Text>
           </Card.Content>
           <Card.Actions>
             <ActionContainer>
